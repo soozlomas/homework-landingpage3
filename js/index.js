@@ -5,6 +5,10 @@
 
 $(document).ready(function(){
 
+$('a').click(function(event){
+  event.preventDefault();
+});
+
 $('.readmore').click(function() {
   console.log('clicked 2');
 
