@@ -20,9 +20,12 @@ $('.readmore').click(function() {
 $('.readless').click(function() {
   console.log('clicked 2');
 
-    $('#show-this-on-click').slideUp(750);
+    $('#show-this-on-click').slideUp(750, function() {
+      $('.readmore').fadeIn(500);
+    });
+
     $('.readless').hide();
-    $('.readmore').fadeIn(1000);
+
 });
 
 $('.learnmore').click(function() {
